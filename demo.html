@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="test" action="http://47.107.32.15:8080/sport/admin_manager_login" method="get">
+        <input type="text" name="username" value="davont" id="name">
+        <input type="password" name="password" value="123456" id="password">
+        <button type="button" id="submitForm">提交</button>
+    </form>
+    <br>
+    <form id="testform" action="http://47.107.32.15:8080/sport/admin_ann_add" method="POST" enctype="multipart/form-data">
+        <input type="text" name="title">
+        <input type="text" name="content">
+        <input type="file" name="file" id="">
+        <button type="submit">提交文件</button>
+    </form>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.form.js"></script>
+    <script>
+        var formData = new FormData($("#testform")[0]);
+        $.ajax({
+            type: 'POST',
+            url: 'http://47.107.32.15:8080/sport/admin_manager_login',
+            data: {
+                username: $("#name").val(),
+                password: $("#password").val(),
+
+            },
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+            }
+
+        });
+
+
+        $("#test").submit(function () {
+            console.log("success!")
+        })
+    </script>
+</body>
+
+</html>
