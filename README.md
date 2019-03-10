@@ -14,9 +14,13 @@ Esport back-end management system by the teacher.
 
 ## Function List
 
+<div align="center">
+
 | Number |   Module    |                                             Function                                             |
 | :----: | :---------: | :----------------------------------------------------------------------------------------------: |
 |   1    |    Data     | 1. Enter the punch record <br>2. Entry and modification of grades <br>3. Final grade calculation |
 |   2    |    Push     |                                          Release notice                                          |
 |   3    |   Message   |                         1.Screening<br/>2. Relief application management <br>3. Reply  feedback student message |
 |   4    | Reservation |                           Feedback on student reservation information                            |
+
+</div>
