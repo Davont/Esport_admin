@@ -11,6 +11,7 @@ Esport back-end management system by the teacher.
 ![TIM截图20190310120737.png](https://i.loli.net/2019/03/10/5c848da00732f.png)
 
 ## Function List
+<div align="center">
 
 | Number |   Module    |                                             Function                                             |
 | :----: | :---------: | :----------------------------------------------------------------------------------------------: |
